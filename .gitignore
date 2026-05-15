@@ -1,0 +1,9 @@
+# Secrets
+.env
+
+# Data volumes (named volumes managed by Docker)
+volumes/
+
+# Logs
+*.log
+.bg-shell/

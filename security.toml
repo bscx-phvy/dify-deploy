@@ -1,0 +1,12 @@
+[jwt.filer]
+enabled = false # Set to true if you want to sign Filer requests
+
+[jwt.s3]
+enabled = false
+
+# This section defines the S3 Admin/Root credentials
+[[s3.configure]]
+name = "Admin"
+users = [
+  { name = "admin", secretKey = "Whatever111@@@", actions = ["Read", "Write", "List", "Tagging", "Admin"] }
+]
