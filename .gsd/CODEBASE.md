@@ -1,7 +1,7 @@
 # Codebase Map
 
-Generated: 2026-05-15T08:17:00Z | Files: 10 | Described: 0/10
-<!-- gsd:codebase-meta {"generatedAt":"2026-05-15T08:17:00Z","fingerprint":"f785860a7baf72f0655ffa9dc57417bdb17e83e9","fileCount":10,"truncated":false} -->
+Generated: 2026-05-15T08:58:22Z | Files: 10 | Described: 0/10
+<!-- gsd:codebase-meta {"generatedAt":"2026-05-15T08:58:22Z","fingerprint":"055ea4d1006d358ff2899906aebc24ca7c82a03d","fileCount":10,"truncated":false} -->
 
 ### (root)/
 - `.gitignore`
@@ -15,7 +15,7 @@ Generated: 2026-05-15T08:17:00Z | Files: 10 | Described: 0/10
 - `nginx/proxy.conf.template`
 
 ### nginx/conf.d/
-- `nginx/conf.d/default.conf`
+- `nginx/conf.d/default.conf.template`
 
 ### ssrf_proxy/
 - `ssrf_proxy/docker-entrypoint.sh`

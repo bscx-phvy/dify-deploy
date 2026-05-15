@@ -28,6 +28,12 @@ http {
     keepalive_timeout  ${NGINX_KEEPALIVE_TIMEOUT};
 
     #gzip  on;
+    # Trust X-Forwarded-Proto from upstream reverse proxy (Dokploy), fall back to $scheme
+    map $http_x_forwarded_proto $pass_proto {
+        default $http_x_forwarded_proto;
+        ''      $scheme;
+    }
+
     client_max_body_size ${NGINX_CLIENT_MAX_BODY_SIZE};
 
     include /etc/nginx/conf.d/*.conf;
